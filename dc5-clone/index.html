@@ -1,0 +1,1327 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="./img/banner.png?v=1">
+    <meta property="og:image:type" content="image/png">
+    
+    
+    <meta name="title" content="Lắp wifi fpt chính thức">
+    <title>Landing Page</title>
+    <script src="./js/tailwind.js"></script>
+    <script src="./js/jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+        .swiper-wrapper {
+            height: fit-content;
+        }
+    </style>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TMJJ988P');</script>
+<!-- End Google Tag Manager -->
+</head>
+<body class="bg-white font-sans">
+    <nav class="bg-white shadow-md absolute top-0 left-0 right-0 z-50">
+        <div class="container mx-auto flex justify-between items-center py-4 px-6 md:px-0">
+            <!-- Logo -->
+             <!-- Mobile Menu Button -->
+             <div class="md:hidden flex items-center">
+                <button id="menu-toggle" class="text-gray-800 focus:outline-none">
+                    <!-- Hamburger Icon -->
+                    <svg id="menu-icon" class="w-6 h-6 transition-transform duration-300 transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path id="menu-icon-path" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+                
+            </div>
+    
+            <div class="flex items-center">
+                <img src="./img/logoFPT.png" alt="Logo" class="h-8">
+            </div>
+            <div class="relative inline-block text-left inline md:hidden dropdown">
+                <button class="dropdownButton inline-flex items-center justify-between w-full rounded-full px-4 py-2 bg-white text-gray-900 shadow-md hover:bg-gray-100 focus:outline-none">
+                    <div class="flex items-center">
+                        <div>
+                            <div class="text-sm text-gray-500 text-xs pl-2 svn-gilroy ">Khu vực đang xem</div>
+                            <div class="selectedProvince svn-gilroy-semibold text-xs text-left pl-2 svn-gilroy ">TP. Hồ Chí Minh</div>
+                        </div>
+                    </div>
+                    <svg class="dropdownIcon w-4 h-4 text-gray-600 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                </button>
+                <div class="dropdownContent absolute mt-2 w-full rounded-lg bg-white shadow-lg z-50 hidden">
+                    <ul class="py-2">
+                        <li onclick="selectProvince(this, 'TP. Hồ Chí Minh')" class="px-4 py-2 hover:bg-gray-100 cursor-pointer svn-gilroy ">TP. Hồ Chí Minh</li>
+                        <li onclick="selectProvince(this, 'Hà Nội')" class="px-4 py-2 hover:bg-gray-100 cursor-pointer svn-gilroy ">Hà Nội</li>
+                        <li onclick="selectProvince(this, 'Đà Nẵng')" class="px-4 py-2 hover:bg-gray-100 cursor-pointer svn-gilroy ">Đà Nẵng</li>
+                        <li onclick="selectProvince(this, 'Các tỉnh khác')" class="px-4 py-2 hover:bg-gray-100 cursor-pointer svn-gilroy ">Các tỉnh khác</li>
+                    </ul>
+                </div>
+            </div>
+    
+           
+            <!-- Navigation Links -->
+            <div id="menu" class="mt-2 hidden md:flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-6 absolute md:static top-[64px] md:top-auto left-0 right-0 bg-white md:bg-transparent overflow-y-auto md:overflow-visible h-0 md:h-auto z-40 md:z-auto transition-height duration-300 ease-in-out">
+                <ul class="flex flex-col md:flex-row justify-end space-y-2 md:space-y-0 md:space-x-6 ml-6 text-gray-800 px-6 py-4 md:p-0">
+                    <li class="flex items-center">
+                        <a href="#" class="hover:text-orange-600 pr-2 svn-gilroy-semibold">Sản phẩm dịch vụ</a>
+                        <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L5 5L9 1" stroke="#323232" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </li>
+                    <li class="flex items-center">
+                        <a href="#" class="hover:text-orange-600 pr-2 svn-gilroy-semibold">Hỗ trợ</a>
+                        <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L5 5L9 1" stroke="#323232" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </li>
+                    <li class="flex items-center">
+                        <a href="#" class="hover:text-orange-600 pr-2 svn-gilroy-semibold">Member FPT</a>
+                        <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L5 5L9 1" stroke="#323232" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </li>
+                    <li class="flex items-center">
+                        <a href="#" class="hover:text-orange-600 pr-2 svn-gilroy-semibold">Thanh toán Online</a>
+                    </li>
+                    <li class="flex items-center">
+                        <a href="#" class="hover:text-orange-600 pr-2 svn-gilroy-semibold">Khách hàng thân thiết</a>
+                    </li>
+                    <li class="flex items-center cursor-pointer">
+                        <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.05557 10.8888C5.05557 7.21215 8.04552 4.22219 11.7221 4.22219C15.3988 4.22219 18.3887 7.21215 18.3887 10.8888C18.3887 14.5654 15.3988 17.5553 11.7221 17.5553C8.04552 17.5553 5.05557 14.5654 5.05557 10.8888ZM22.5075 20.1031L18.7354 16.3298C19.9054 14.8254 20.6109 12.9398 20.6109 10.8888C20.6109 5.98772 16.6232 2 11.7221 2C6.8211 2 2.83337 5.98772 2.83337 10.8888C2.83337 15.7898 6.8211 19.7775 11.7221 19.7775C13.7732 19.7775 15.6588 19.072 17.1632 17.902L20.9365 21.6742C21.1531 21.8908 21.4376 21.9997 21.722 21.9997C22.0064 21.9997 22.2909 21.8908 22.5075 21.6742C22.942 21.2397 22.942 20.5375 22.5075 20.1031Z" fill="#1F2636"/>
+                        </svg>
+                    </li>
+                </ul>
+          
+            </div>
+        </div>
+    </nav>
+
+    <section class="bg-img-banner to-yellow-300 text-white relative z-10 w-full">
+        <div class="relative top-24 container mx-auto flex flex-col items-start w-full max-w-screen-lg px-4 md:px-0">
+            <div class="pt-14 md:pt-6 md:pb-4">
+                <p class="pb-0 md:pb-4">Internet FPT</p>
+                <h1 class="stroke text-left text-[28px] md:text-[52px] leading-normal md:leading-[57.2px] font-[600] svn-gilroy-bold pb-5">
+                    Trải nghiệm tuyệt vời <br /> Net nhanh chóng mặt
+                </h1>
+            </div>
+            <div class="flex justify-between w-full h-full space-x-0 md:space-x-2 items-stretch">
+                <div class="relative rounded-lg shadow-lg w-full md:max-w-[696px] ">
+                    <!-- Slider for banner -->
+                    <div class="swiper myBannerSwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="./img/banner.png" alt="Giáng sinh An lành" class="rounded-lg">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./img/banner.png" alt="Giáng sinh An lành" class="rounded-lg">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./img/banner.png" alt="Giáng sinh An lành" class="rounded-lg">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./img/banner.png" alt="Giáng sinh An lành" class="rounded-lg">
+                            </div>
+                        </div>
+                        
+                        <div class="banner-par">
+                            <div class="swiper-pagination banner-pagination"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hidden md:block min-h-full w-full bg-[#242424] bg-opacity-65 backdrop-blur-[30px] p-4 rounded-2xl shadow-lg w-auto text-center border-solid border-[1px] border-[#FFCD6C]">
+                    <h2 class="text-white text-[24px] svn-gilroy-semibold">Đăng ký liên tay 
+                        <h2 class="svn-gilroy">Nhận ngay ưu đãi</h2>
+                    </h2>
+                    
+                    <form name="form-dang-ky-thong-tin" class="pt-8">
+                      <input type="text" name="name" placeholder="Họ và tên" class="w-full mb-4 p-[12px] h-[42px] rounded-[8px] text-white placeholder-white border border-[1px] border-[#FFCD6C] bg-black/20 border rounded-md px-4 py-2 text-white outline-none focus:ring-2 focus:ring-yellow-300">
+                      <input type="text" name="phone" placeholder="Nhập số điện thoại" class="w-full mb-4 p-[12px] h-[42px] rounded-[8px] text-white placeholder-white border border-[1px] border-[#FFCD6C] bg-black/20 border rounded-md px-4 py-2 text-white outline-none focus:ring-2 focus:ring-yellow-300">
+                      <button onclick="return register(this);" class="relative z-10 w-full gradient-button h-[42px]">
+                         <span class="svn-gilroy-bold text-base text-white"> Đăng ký thông tin</span>
+                      </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="w-full h-full">
+        <div class="h-24 relative">
+            <div class="bg-white w-full h-10 rounded-[24px] absolute top-[-10px] z-[-1]"></div>
+        </div>
+        <section class="py-8 max-w-screen-lg mx-auto px-4 md:px-0">
+            <div class="container mx-auto text-left">
+                <div class="flex justify-between items-center mb-8 z-10">
+                    <div class="flex justify-start items-center">
+                        <img class="w-6 md:w-9" src="./img/icon-section1.png"/>
+                        <h2 class="text-2xl md:text-3xl svn-gilroy-bold text-gray-800 pl-4">Internet FPT</h2>
+                    </div>
+                
+                    <div class="relative inline-block text-left">
+                        <div class="relative z-20 inline-block text-left hidden md:flex dropdown">
+                            <button class="dropdownButton inline-flex items-center justify-between w-full rounded-full px-4 py-2 bg-white text-gray-900 shadow-md hover:bg-gray-100 focus:outline-none">
+                                <div class="flex items-center">
+                                    <img src="./img/vector.png"/>
+                                    <div>
+                                        <div class="text-sm text-gray-500 text-sm pl-2 svn-gilroy ">Khu vực đang xem</div>
+                                        <div class="selectedProvince svn-gilroy-semibold text-base text-left pl-2 svn-gilroy ">TP. Hồ Chí Minh</div>
+                                    </div>
+                                </div>
+                                <svg class="dropdownIcon w-4 h-4 text-gray-600 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </button>
+                            <div class="dropdownContent absolute mt-16 w-full rounded-lg bg-white shadow-lg hidden">
+                                <ul class="">
+                                    <li onclick="selectProvince(this, 'TP. Hồ Chí Minh')" class="text-sm  px-4 py-2 hover:bg-gray-100 cursor-pointer svn-gilroy ">TP. Hồ Chí Minh</li>
+                                    <li onclick="selectProvince(this, 'Hà Nội')" class="text-sm  px-4 py-2 hover:bg-gray-100 cursor-pointer svn-gilroy ">Hà Nội</li>
+                                    <li onclick="selectProvince(this, 'Đà Nẵng')" class="text-sm  px-4 py-2 hover:bg-gray-100 cursor-pointer svn-gilroy ">Đà Nẵng</li>
+                                    <li onclick="selectProvince(this, 'Các tỉnh khác')" class="text-sm  px-4 py-2 hover:bg-gray-100 cursor-pointer svn-gilroy ">Các tỉnh khác</li>
+                                </ul>
+                            </div>
+                        </div>
+                    
+                        <div class="absolute mt-2 w-full rounded-lg bg-white shadow-lg z-10 hidden">
+                            <ul class="py-2">
+                                <li class="px-4 py-2 hover:bg-gray-100 cursor-pointer svn-gilroy ">TP. Hồ Chí Minh</li>
+                                <li class="px-4 py-2 hover:bg-gray-100 cursor-pointer svn-gilroy ">Hà Nội</li>
+                                <li class="px-4 py-2 hover:bg-gray-100 cursor-pointer svn-gilroy ">Đà Nẵng</li>
+                                <li class="px-4 py-2 hover:bg-gray-100 cursor-pointer svn-gilroy ">Các tỉnh khác</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+               
+                <div class="relative h-auto">
+                    <div class="absolute top-[-90px] right-0 md:right-[-110px] z-[-1]">
+                        <img src="./img/decorate-right-section.png" alt="Decorative Element" class="maxw-[212px] h-auto opacity-30">
+                    </div>
+
+                    <div class="swiper myComboSwiper1 h-auto">
+                        <div class="items-stretch space-y-4 md:space-y-0 swiper-wrapper flex flex-col md:flex-row">
+                            <!-- Giga -->
+                            <div class="swiper-slide combo h-auto w-full md:w-auto bg-gradient3 bg-[#8E3900] text-white rounded-[16px] p-6 border-2 border-gradient-to-r from-[#FFB494] via-[#FFFFFF] to-[#FFCF53]">
+                                <div class="absolute z-10 top-0 right-0 bottom-0 z-1 opacity-90">
+                                    <img class="rounded-[16px]  h-full" src="./img/vector-decote-intenet-1.png"/>
+                                </div>
+                                <div class="h-full relative z-10 flex flex-col justify-between items-start">
+                                    <div class="w-full flex flex-col">
+                                        <div class="w-full flex justify-between items-center mb-4">
+                                            <h3 class="text-lg svn-gilroy-semibold">Giga</h3>
+                                            <button class="bg-[#FF6C28] svn-gilroy-semibold rounded-3xl">
+                                                <div class="flex items-center justify-center py-1 px-2 text-[12px]">
+                                                    <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.885 2.99137C8.92719 2.68386 8.53177 2.52257 8.34684 2.77185L3.35451 9.50144C3.20765 9.6994 3.34896 9.98018 3.59545 9.98018H7.98873C8.17062 9.98018 8.31066 10.1407 8.28594 10.321L7.78039 14.006C7.7382 14.3135 8.13361 14.4748 8.31854 14.2255L13.3109 7.49596C13.4577 7.29799 13.3164 7.01722 13.0699 7.01722H8.67666C8.49477 7.01722 8.35472 6.85665 8.37944 6.67644L8.885 2.99137Z" fill="white"/>
+                                                    </svg>
+                                                    <span class="pt-[2.5px] text-white pl-1 pr-1 leading-none">
+                                                        BÁN CHẠY
+                                                    </span>
+                                                </div>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <p class="mb-4 text-sm svn-gilroy ">Tốc độ download/upload</p>
+                                    <h4 class="text-4xl svn-gilroy-bold mb-4">Lên tới 150 Mbps</h4>
+
+                                    <div class="flex flex-col justify-end items-center w-full">
+                                        <button onclick="openModal()" class="w-full gradient-button h-[42px]">
+                                        <span class="svn-gilroy-bold text-base text-white">Đăng ký ngay</span>
+                                    </button>
+                                        <ul class="text-left mt-4 space-y-2 list-disc pl-4">
+                                            <li class="wt svn-gilroy ">Miễn phí <span class="text-[#E7AA88] indent-4">lắp đặt, trang bị Modern WiFi & HD Box</span></li>
+                                        </ul>
+                                        <div class="flex justify-between items-center mt-4 w-full">
+                                            <p class="leading-6"><span class="svn-gilroy-semibold text-sm">Giá:</span> <span class="svn-gilroy-bold text-white">180.000đ/tháng</span></p>
+                                            <a href="https://shop.fpt.vn/s/rvnvhl-detail" class="flex justify-center items-center">
+                                                <span class="text-white svn-gilroy font-sm hite">Chi tiết </span>
+                                                <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M10.6667 16L14.6667 12L10.6667 8" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Sky -->
+                            <div class="swiper-slide combo h-auto w-full md:w-auto bg-gradient4 bg-[#8E3900] text-white rounded-[16px] p-6 border-2 border-gradient-to-r from-[#8E0F0F] via-[#FFFFFF] to-[#C14B31]">
+                                <div class="absolute z-10 top-0 right-0 bottom-0 z-1 opacity-90">
+                                    <img class="rounded-[16px]  h-full" src="./img/vector-decote-intenet-2.png"/>
+                                </div>
+                                <div class="h-full relative z-10 flex flex-col justify-between items-start">
+                                    <div class="w-full flex flex-col">
+                                        <div class="w-full flex justify-between items-center mb-4">
+                                            <h3 class="text-lg svn-gilroy-semibold">Sky</h3>
+                                            <button class="bg-[#E9392E] svn-gilroy-semibold rounded-3xl">
+                                                <div class="flex items-center justify-center py-1 px-2 text-[12px]">
+                                                    <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.885 2.99137C8.92719 2.68386 8.53177 2.52257 8.34684 2.77185L3.35451 9.50144C3.20765 9.6994 3.34896 9.98018 3.59545 9.98018H7.98873C8.17062 9.98018 8.31066 10.1407 8.28594 10.321L7.78039 14.006C7.7382 14.3135 8.13361 14.4748 8.31854 14.2255L13.3109 7.49596C13.4577 7.29799 13.3164 7.01722 13.0699 7.01722H8.67666C8.49477 7.01722 8.35472 6.85665 8.37944 6.67644L8.885 2.99137Z" fill="white"/>
+                                                    </svg>
+                                                    <span class="pt-[2.5px] text-white pl-1 pr-1 leading-none">
+                                                        BÁN CHẠY
+                                                    </span>
+                                                </div>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    
+                                    <p class="mb-4 text-sm svn-gilroy ">Tốc độ download/upload</p>
+                                    <h4 class="text-4xl svn-gilroy-bold mb-4">Lên tới 1 Gbps / 150 Mbps</h4>
+
+                                    <div class="flex flex-col justify-end items-center w-full">
+                                        <button onclick="openModal()" class="w-full gradient-button h-[42px]">
+                                        <span class="svn-gilroy-bold text-base text-white">Đăng ký ngay</span>
+                                    </button>
+                                        <ul class="text-left mt-4 space-y-2 list-disc pl-4">
+                                            <li class="wt svn-gilroy ">Miễn phí <span class="text-[#E7AA88] indent-4">lắp đặt, trang bị Modern WiFi & HD Box</span></li>
+                                        </ul>
+                                        <div class="flex justify-between items-center mt-4 w-full">
+                                            <p class="leading-6"><span class="svn-gilroy-semibold text-sm">Giá:</span> <span class="svn-gilroy-bold text-white">225.000đ/tháng</span></p>
+                                            <a href="https://shop.fpt.vn/s/rvnvhl-detail" class="flex justify-center items-center">
+                                                <span class="text-white svn-gilroy font-sm hite">Chi tiết </span>
+                                                <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M10.6667 16L14.6667 12L10.6667 8" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <!-- Fgame -->
+                            <div class="swiper-slide combo h-auto w-full md:w-auto bg-white text-gray-800  rounded-[16px] p-6 border-2 border-gradient-to-r from-[#C1C1C1] via-[#FFFFFF] to-[#E6E6E6]">
+                                <div class="absolute z-10 top-0 right-0 bottom-0 z-1 opacity-90">
+                                    <img class="rounded-[16px] h-full" src="./img/vector-decote-intenet-3.png"/>
+                                </div>
+                                <div class="h-full relative z-10 flex flex-col justify-between items-start">
+                                    <div class="w-full flex flex-col">
+                                        <div class="w-full flex justify-between items-center mb-4">
+                                            <h3 class="text-lg svn-gilroy-semibold">Fgame</h3>
+                                           
+                                        </div>
+                                        
+                                        <p class="mb-4 text-sm text-gray-500 svn-gilroy ">Tốc độ download/upload</p>
+                                        <h4 class="text-4xl svn-gilroy-bold mb-4 text-gray-700 mb-4 bg-gradient-to-r from-[#1F2636] to-[#AAB7D5] bg-clip-text text-transparent">Lên tới 1 Gbps / 150 Mbps Mbps</h4>
+                                        <p class="text-gray-500 mb-3 bg-gradient-to-r from-[#1F2636] to-[#AAB7D5] bg-clip-text text-transparent">Phụ thuộc vào thiết bị</p>
+                                    </div>
+                                    
+                                    <div class="flex flex-col justify-end items-center w-full">
+                                        <button onclick="openModal()" class="w-full gradient-button h-[42px]">
+                                        <span class="svn-gilroy-bold text-base text-white">Đăng ký ngay</span>
+                                    </button>
+                                        <ul class="text-left mt-4 space-y-2 list-disc pl-4">
+                                            <li class="wt svn-gilroy ">Miễn phí <span class="text-[#E7AA88] indent-4">lắp đặt, trang bị Modern WiFi & HD Box</span></li>
+                                        </ul>
+                                        <div class="flex justify-between items-center mt-4 w-full">
+                                            <p class="leading-6"><span class="svn-gilroy-semibold text-sm">Giá:</span> <span class="svn-gilroy-bold text-[#1F2636]">265.000đ/tháng</span></p>
+                                            <a href="https://shop.fpt.vn/s/rvnvhl-detail" class="flex justify-center items-center">
+                                                <span class="svn-gilroy font-sm leading-[14px] text-[#1F2636]">Chi tiết </span>
+                                                <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M10.6667 16L14.6667 12L10.6667 8" stroke="#1F2636" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Meta -->
+                            <div class="swiper-slide combo h-auto w-full md:w-auto bg-gradient3 bg-[#8E3900] text-white rounded-[16px] p-6 border-2 border-gradient-to-r from-[#FFB494] via-[#FFFFFF] to-[#FFCF53]">
+                                <div class="absolute z-10 top-0 right-0 bottom-0 z-1 opacity-90">
+                                    <img class="rounded-[16px]  h-full" src="./img/vector-decote-intenet-1.png"/>
+                                </div>
+                                <div class="h-full relative z-10 flex flex-col justify-between items-start">
+                                    <div class="w-full flex flex-col">
+                                        <div class="w-full flex justify-between items-center mb-4">
+                                            <h3 class="text-lg svn-gilroy-semibold">Meta</h3>
+                                            <button class="bg-[#FF6C28] svn-gilroy-semibold rounded-3xl">
+                                                <div class="flex items-center justify-center py-1 px-2 text-[12px]">
+                                                    <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.885 2.99137C8.92719 2.68386 8.53177 2.52257 8.34684 2.77185L3.35451 9.50144C3.20765 9.6994 3.34896 9.98018 3.59545 9.98018H7.98873C8.17062 9.98018 8.31066 10.1407 8.28594 10.321L7.78039 14.006C7.7382 14.3135 8.13361 14.4748 8.31854 14.2255L13.3109 7.49596C13.4577 7.29799 13.3164 7.01722 13.0699 7.01722H8.67666C8.49477 7.01722 8.35472 6.85665 8.37944 6.67644L8.885 2.99137Z" fill="white"/>
+                                                    </svg>
+                                                    <span class="pt-[2.5px] text-white pl-1 pr-1 leading-none">
+                                                        BÁN CHẠY
+                                                    </span>
+                                                </div>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <p class="mb-4 text-sm svn-gilroy ">Tốc độ download/upload</p>
+                                    <h4 class="text-4xl svn-gilroy-bold mb-4">Lên tới 1 Gbps</h4>
+
+                                    <div class="flex flex-col justify-end items-center w-full">
+                                        <button onclick="openModal()" class="w-full gradient-button h-[42px]">
+                                        <span class="svn-gilroy-bold text-base text-white">Đăng ký ngay</span>
+                                    </button>
+                                        <ul class="text-left mt-4 space-y-2 list-disc pl-4">
+                                            <li class="wt svn-gilroy ">Miễn phí <span class="text-[#E7AA88] indent-4">lắp đặt, trang bị Modern WiFi & HD Box</span></li>
+                                        </ul>
+                                        <div class="flex justify-between items-center mt-4 w-full">
+                                            <p class="leading-6"><span class="svn-gilroy-semibold text-sm">Giá:</span> <span class="svn-gilroy-bold text-white">325.000đ/tháng</span></p>
+                                            <a href="https://shop.fpt.vn/s/rvnvhl-detail" class="flex justify-center items-center">
+                                                <span class="text-white svn-gilroy font-sm hite">Chi tiết </span>
+                                                <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M10.6667 16L14.6667 12L10.6667 8" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+             
+                            <!--  
+                            <div class=" block md:hidden swiper-slide w-full cursor-pointer">
+                                <button class="show-more mx-auto w-fit flex justify-between items-center mt-4 px-4 py-2 rounded-full border border-gray-300 text-gray-700">
+                                    <span class="pr-2 button-text">
+                                        Xem thêm 7 gói khác
+                                    </span>
+                                    <svg class="svg-inside" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 1L5 5L9 1" stroke="#323232" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                            </div>
+                            -->
+                        </div>
+                    </div>
+                    <div class="swiper-pagination combo-pagination1 mt-4 relative top-10"></div>
+                    <div class="absolute inset-y-0 left-[-70px] flex items-center">
+                        <button class="w-12 swiper-button-prev combo-prev1 absolute left-0 top-1/2 transform -translate-y-1/2 bg-white text-gray-800 rounded-full p-2 shadow-md hover:bg-gray-100 focus:outline-none">
+                            <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.66665 1.1665L1.33331 6.49984L6.66665 11.8332" stroke="#323232" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="absolute inset-y-0 right-0 flex items-center">
+                        <button class="w-12 swiper-button-next combo-next1 absolute right-[-70px] top-1/2 transform -translate-y-1/2 bg-white text-gray-800 rounded-full p-2 shadow-md hover:bg-gray-100 focus:outline-none">
+                            <span class="rotate-180">
+                                <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.66665 1.1665L1.33331 6.49984L6.66665 11.8332" stroke="#323232" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="py-8 max-w-screen-lg mx-auto px-4 md:px-0">
+            <div class="container mx-auto text-left">
+                <div class="flex justify-start items-center mb-8">
+                    <img class="w-6 md: w-9" src="./img/icon-section2.png"/>
+                    <h2 class="text-2xl md:text-3xl svn-gilroy-bold text-gray-800 pl-4">Combo Internet & Truyền hình FPT</h2>
+                </div>
+                <div class="relative h-auto">
+                    <div class="absolute top-[-90px] right-0 md:right-[-110px] z-[1]">
+                        <img src="./img/decorate-right-section2.png" alt="Decorative Element" class="w-[212] h-auto opacity-30">
+                    </div>
+                    <div class="swiper myComboSwiper2 h-auto">
+                        <div class="items-stretch space-y-4 md:space-y-0 swiper-wrapper flex flex-col md:flex-row">
+                            <!-- Combo Giga -->
+                            <div class="swiper-slide combo h-auto w-full md:w-auto bg-gradient1 bg-[#265501] text-white rounded-[16px] p-6 border-2 border-gradient-to-r from-[#5EA33D] via-[#FFFFFF] to-[#289502]">
+                                <div class="absolute z-10 top-0 right-0 bottom-0 z-1 opacity-90">
+                                    <img class="rounded-[16px]  h-full" src="./img/vector-decote-tv.png"/>
+                                </div>
+                                <div class="h-full relative z-10 flex flex-col justify-between items-start">
+                                    <div class="w-full flex flex-col">
+                                        <div class="w-full flex justify-between items-center mb-4">
+                                            <h3 class="text-lg svn-gilroy-semibold">Combo Giga</h3>
+                                            <button class="bg-[#FF6C28] svn-gilroy-semibold rounded-3xl">
+                                                <div class="flex items-center justify-center py-1 px-2 text-[12px]">
+                                                    <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.885 2.99137C8.92719 2.68386 8.53177 2.52257 8.34684 2.77185L3.35451 9.50144C3.20765 9.6994 3.34896 9.98018 3.59545 9.98018H7.98873C8.17062 9.98018 8.31066 10.1407 8.28594 10.321L7.78039 14.006C7.7382 14.3135 8.13361 14.4748 8.31854 14.2255L13.3109 7.49596C13.4577 7.29799 13.3164 7.01722 13.0699 7.01722H8.67666C8.49477 7.01722 8.35472 6.85665 8.37944 6.67644L8.885 2.99137Z" fill="white"/>
+                                                    </svg>
+                                                    <span class="pt-[2.5px] text-white pl-1 pr-1 leading-none">
+                                                        BÁN CHẠY
+                                                    </span>
+                                                </div>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <p class="mb-4 text-sm svn-gilroy ">Tốc độ download/upload</p>
+                                    <h4 class="text-4xl svn-gilroy-bold mb-4">Lên tới 150 Mbps</h4>
+
+                                    <div class="flex flex-col justify-end items-center w-full">
+                                        <button onclick="openModal()" class="w-full gradient-button h-[42px]">
+                                            <span class="svn-gilroy-bold text-base text-white">Đăng ký ngay</span>
+                                        </button>
+                                        <ul class="text-left mt-4 space-y-2 list-disc pl-4">
+                                            <li class="wt svn-gilroy ">Hơn 180 kênh <span class="text-[#E7AA88] svn-gilroy">truyền hình</span></li>
+                                            <li class="wt svn-gilroy ">Miễn phí <span class="text-[#E7AA88] indent-4">lắp đặt, trang bị Modern WiFi & HD Box</span></li>
+                                        </ul>
+                                        <div class="flex justify-between items-center mt-4 w-full">
+                                            <p class="leading-6"><span class="svn-gilroy-semibold text-sm">Giá:</span> <span class="svn-gilroy-bold text-white">230.000đ/tháng</span></p>
+                                            <a href="https://shop.fpt.vn/s/rvnvhl-detail" class="flex justify-center items-center">
+                                                <span class="text-white svn-gilroy font-sm hite">Chi tiết </span>
+                                                <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M10.6667 16L14.6667 12L10.6667 8" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <!--  -->
+                            <div class="swiper-slide combo h-auto w-full md:w-auto bg-gradient2 bg-[#265501] text-white rounded-[16px] p-6 border-2 border-gradient-to-r from-[#5EA33D] via-[#FFFFFF] to-[#289502]">
+                                <div class="absolute z-10 top-0 right-0 bottom-0 z-1 opacity-90">
+                                    <img class="rounded-[16px]  h-full" src="./img/vector-decote-tv.png"/>
+                                </div>
+                                <div class="h-full relative z-10 flex flex-col justify-between items-start">
+                                    <div class="w-full flex flex-col">
+                                        <div class="w-full flex justify-between items-center mb-4">
+                                            <h3 class="text-lg svn-gilroy-semibold">Combo Sky</h3>
+                                            <button class="bg-[#27AE60] svn-gilroy-semibold rounded-3xl">
+                                                <div class="flex items-center justify-center py-1 px-2 text-[12px]">
+                                                    <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.885 2.99137C8.92719 2.68386 8.53177 2.52257 8.34684 2.77185L3.35451 9.50144C3.20765 9.6994 3.34896 9.98018 3.59545 9.98018H7.98873C8.17062 9.98018 8.31066 10.1407 8.28594 10.321L7.78039 14.006C7.7382 14.3135 8.13361 14.4748 8.31854 14.2255L13.3109 7.49596C13.4577 7.29799 13.3164 7.01722 13.0699 7.01722H8.67666C8.49477 7.01722 8.35472 6.85665 8.37944 6.67644L8.885 2.99137Z" fill="white"/>
+                                                    </svg>
+                                                    <span class="pt-[2.5px] text-white pl-1 pr-1 leading-none">
+                                                        BÁN CHẠY
+                                                    </span>
+                                                </div>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <p class="mb-4 text-sm svn-gilroy ">Tốc độ download/upload</p>
+                                    <h4 class="text-4xl svn-gilroy-bold mb-4">Lên tới 1 Gbps / 150 Mbps</h4>
+
+                                    <div class="flex flex-col justify-end items-center w-full">
+                                        <button onclick="openModal()" class="w-full gradient-button h-[42px]">
+                                        <span class="svn-gilroy-bold text-base text-white">Đăng ký ngay</span>
+                                    </button>
+                                        <ul class="text-left mt-4 space-y-2 list-disc pl-4">
+                                            <li class="wt svn-gilroy ">Hơn 180 kênh <span class="text-[#E7AA88] svn-gilroy">truyền hình</span></li>
+                                            <li class="wt svn-gilroy ">Miễn phí <span class="text-[#E7AA88] indent-4">lắp đặt, trang bị Modern WiFi & HD Box</span></li>
+                                        </ul>
+                                        <div class="flex justify-between items-center mt-4 w-full">
+                                            <p class="leading-6"><span class="svn-gilroy-semibold text-sm">Giá:</span> <span class="svn-gilroy-bold text-white">285.000đ/tháng</span></p>
+                                            <a href="https://shop.fpt.vn/s/rvnvhl-detail" class="flex justify-center items-center">
+                                                <span class="text-white svn-gilroy font-sm hite">Chi tiết </span>
+                                                <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M10.6667 16L14.6667 12L10.6667 8" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Combo Fgame -->
+                            <div class="swiper-slide combo h-auto w-full md:w-auto bg-white text-gray-800  rounded-[16px] p-6 border-2 border-gradient-to-r from-[#C1C1C1] via-[#FFFFFF] to-[#E6E6E6]">
+                                <div class="absolute z-10 top-0 right-0 bottom-0 z-1 opacity-90">
+                                    <img class="rounded-[16px] h-full" src="./img/vector-decote-intenet-3.png"/>
+                                </div>
+                                <div class="h-full relative z-10 flex flex-col justify-between items-start">
+                                    <div class="w-full flex flex-col">
+                                        <div class="w-full flex justify-between items-center mb-4">
+                                            <h3 class="text-lg svn-gilroy-semibold">Combo Fgame</h3>
+                                           
+                                        </div>
+                                        
+                                        <p class="mb-4 text-sm text-gray-500 svn-gilroy ">Tốc độ download/upload</p>
+                                        <h4 class="text-4xl svn-gilroy-bold mb-4 text-gray-700 mb-4 bg-gradient-to-r from-[#1F2636] to-[#AAB7D5] bg-clip-text text-transparent">Lên tới 1 Gbps / 150 Mbps</h4>
+                                        <p class="text-gray-500 mb-3 bg-gradient-to-r from-[#1F2636] to-[#AAB7D5] bg-clip-text text-transparent">Phụ thuộc vào thiết bị</p>
+                                    </div>
+                                    
+                                    <div class="flex flex-col justify-end items-center w-full">
+                                        <button onclick="openModal()" class="w-full gradient-button h-[42px]">
+                                        <span class="svn-gilroy-bold text-base text-white">Đăng ký ngay</span>
+                                    </button>
+                                        <ul class="text-left mt-4 space-y-2 list-disc pl-4">
+                                            <li class="wt svn-gilroy ">Hơn 180 kênh<span class="text-[#E7AA88]"> truyền hình</span></li>
+                                            <li class="wt svn-gilroy ">Miễn phí <span class="text-[#E7AA88] indent-4">lắp đặt, trang bị Modern WiFi & HD Box</span></li>
+                                        </ul>
+                                        <div class="flex justify-between items-center mt-4 w-full">
+                                            <p class="leading-6"><span class="svn-gilroy-semibold text-sm">Giá:</span> <span class="svn-gilroy-bold text-[#1F2636]">315.000đ/tháng</span></p>
+                                            <a href="https://shop.fpt.vn/s/rvnvhl-detail" class="flex justify-center items-center">
+                                                <span class="svn-gilroy font-sm leading-[14px] text-[#1F2636]">Chi tiết </span>
+                                                <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M10.6667 16L14.6667 12L10.6667 8" stroke="#1F2636" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Combo Meta -->
+                            <div class="swiper-slide combo h-auto w-full md:w-auto bg-gradient1 bg-[#265501] text-white rounded-[16px] p-6 border-2 border-gradient-to-r from-[#5EA33D] via-[#FFFFFF] to-[#289502]">
+                                <div class="absolute z-10 top-0 right-0 bottom-0 z-1 opacity-90">
+                                    <img class="rounded-[16px]  h-full" src="./img/vector-decote-tv.png"/>
+                                </div>
+                                <div class="h-full relative z-10 flex flex-col justify-between items-start">
+                                    <div class="w-full flex flex-col">
+                                        <div class="w-full flex justify-between items-center mb-4">
+                                            <h3 class="text-lg svn-gilroy-semibold">Combo Meta</h3>
+                                            <button class="bg-[#FF6C28] svn-gilroy-semibold rounded-3xl">
+                                                <div class="flex items-center justify-center py-1 px-2 text-[12px]">
+                                                    <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.885 2.99137C8.92719 2.68386 8.53177 2.52257 8.34684 2.77185L3.35451 9.50144C3.20765 9.6994 3.34896 9.98018 3.59545 9.98018H7.98873C8.17062 9.98018 8.31066 10.1407 8.28594 10.321L7.78039 14.006C7.7382 14.3135 8.13361 14.4748 8.31854 14.2255L13.3109 7.49596C13.4577 7.29799 13.3164 7.01722 13.0699 7.01722H8.67666C8.49477 7.01722 8.35472 6.85665 8.37944 6.67644L8.885 2.99137Z" fill="white"/>
+                                                    </svg>
+                                                    <span class="pt-[2.5px] text-white pl-1 pr-1 leading-none">
+                                                        BÁN CHẠY
+                                                    </span>
+                                                </div>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <p class="mb-4 text-sm svn-gilroy ">Tốc độ download/upload</p>
+                                    <h4 class="text-4xl svn-gilroy-bold mb-4">Lên tới 1 Gbps</h4>
+
+                                    <div class="flex flex-col justify-end items-center w-full">
+                                        <button onclick="openModal()" class="w-full gradient-button h-[42px]">
+                                        <span class="svn-gilroy-bold text-base text-white">Đăng ký ngay</span>
+                                    </button>
+                                        <ul class="text-left mt-4 space-y-2 list-disc pl-4">
+                                            <li class="wt svn-gilroy ">Hơn 180 kênh <span class="text-[#E7AA88] svn-gilroy">truyền hình</span></li>
+                                            <li class="wt svn-gilroy ">Miễn phí <span class="text-[#E7AA88] indent-4">lắp đặt, trang bị Modern WiFi & HD Box</span></li>
+                                        </ul>
+                                        <div class="flex justify-between items-center mt-4 w-full">
+                                            <p class="leading-6"><span class="svn-gilroy-semibold text-sm">Giá:</span> <span class="svn-gilroy-bold text-white">385.000đ/tháng</span></p>
+                                            <a href="https://shop.fpt.vn/s/rvnvhl-detail" class="flex justify-center items-center">
+                                                <span class="text-white svn-gilroy font-sm hite">Chi tiết </span>
+                                                <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M10.6667 16L14.6667 12L10.6667 8" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--  
+                            <div class=" block md:hidden swiper-slide w-full cursor-pointer">
+                                <button class="show-more mx-auto w-fit flex justify-between items-center mt-4 px-4 py-2 rounded-full border border-gray-300 text-gray-700">
+                                    <span class="pr-2 button-text svn-gilroy ">
+                                        Xem thêm 7 gói khác
+                                    </span>
+                                    <svg class="svg-inside" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 1L5 5L9 1" stroke="#323232" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                           </div>
+                           -->
+                        </div>
+                    </div>
+                    <div class="swiper-pagination combo-pagination2 mt-4 relative top-10"></div>
+                    <div class="absolute inset-y-0 left-[-70px] flex items-center">
+                        <button class="w-12 swiper-button-prev combo-prev2 absolute left-0 top-1/2 transform -translate-y-1/2 bg-white text-gray-800 rounded-full p-2 shadow-md hover:bg-gray-100 focus:outline-none">
+                            <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.66665 1.1665L1.33331 6.49984L6.66665 11.8332" stroke="#323232" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="absolute inset-y-0 right-0 flex items-center">
+                        <button class="w-12 swiper-button-next combo-next2 absolute right-[-70px] top-1/2 transform -translate-y-1/2 bg-white text-gray-800 rounded-full p-2 shadow-md hover:bg-gray-100 focus:outline-none">
+                            <span class="rotate-180">
+                                <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.66665 1.1665L1.33331 6.49984L6.66665 11.8332" stroke="#323232" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <section class="py-8 max-w-screen-lg mx-auto px-4 md:px-0">
+            <div class="container mx-auto text-left">
+                <div class="flex justify-start items-center mb-8">
+                    <img class="w-6 md:w-9" src="./img/icon-section1.png"/>
+                    <h2 class="text-2xl md:text-3xl svn-gilroy-bold text-gray-800 pl-4">Internet FPT Doanh Nghiệp</h2>
+                </div>
+                <div class="relative h-auto">
+                    <div class="absolute top-[-90px] right-0 md:right-[-110px] z-[1]">
+                        <img src="./img/decorate-right-section3.png" alt="Decorative Element" class="w-[212] h-auto opacity-50">
+                    </div>
+                    
+                    <div class="swiper myComboSwiper3 h-auto">
+                        <div class="items-stretch space-y-4 md:space-y-0 swiper-wrapper flex flex-col md:flex-row">
+
+                            <!-- Super 250 -->
+                            <div class="swiper-slide combo h-auto w-full md:w-auto bg-gradient3 bg-[#8E3900] text-white rounded-[16px] p-6 border-2 border-gradient-to-r from-[#FFB494] via-[#FFFFFF] to-[#FFCF53]">
+                                <div class="absolute z-10 top-0 right-0 bottom-0 z-1 opacity-90">
+                                    <img class="rounded-[16px]  h-full" src="./img/vector-decote-intenet-1.png"/>
+                                </div>
+                                <div class="h-full relative z-10 flex flex-col justify-between items-start">
+                                    <div class="w-full flex flex-col">
+                                        <div class="w-full flex justify-between items-center mb-4">
+                                            <h3 class="text-lg svn-gilroy-semibold">Super 250</h3>
+                                            <button class="bg-[#FF6C28] svn-gilroy-semibold rounded-3xl">
+                                                <div class="flex items-center justify-center py-1 px-2 text-[12px]">
+                                                    <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.885 2.99137C8.92719 2.68386 8.53177 2.52257 8.34684 2.77185L3.35451 9.50144C3.20765 9.6994 3.34896 9.98018 3.59545 9.98018H7.98873C8.17062 9.98018 8.31066 10.1407 8.28594 10.321L7.78039 14.006C7.7382 14.3135 8.13361 14.4748 8.31854 14.2255L13.3109 7.49596C13.4577 7.29799 13.3164 7.01722 13.0699 7.01722H8.67666C8.49477 7.01722 8.35472 6.85665 8.37944 6.67644L8.885 2.99137Z" fill="white"/>
+                                                    </svg>
+                                                    <span class="pt-[2.5px] text-white pl-1 pr-1 leading-none">
+                                                        BÁN CHẠY
+                                                    </span>
+                                                </div>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <p class="mb-4 text-sm svn-gilroy ">Tốc độ download/upload</p>
+                                    <h4 class="text-4xl svn-gilroy-bold mb-4">Lên tới 250 Mbps</h4>
+
+                                    <div class="flex flex-col justify-end items-center w-full">
+                                        <button onclick="openModal()" class="w-full gradient-button h-[42px]">
+                                        <span class="svn-gilroy-bold text-base text-white">Đăng ký ngay</span>
+                                    </button>
+                                        <ul class="text-left mt-4 space-y-2 list-disc pl-4">
+                                            <li class="wt svn-gilroy ">Miễn phí <span class="text-[#E7AA88] indent-4">lắp đặt, trang bị Modern WiFi & HD Box</span></li>
+                                        </ul>
+                                        <div class="flex justify-between items-center mt-4 w-full">
+                                            <p class="leading-6"><span class="svn-gilroy-semibold text-sm">Giá:</span> <span class="svn-gilroy-bold text-white">545.000đ/tháng</span></p>
+                                            <a href="https://shop.fpt.vn/s/rvnvhl-detail" class="flex justify-center items-center">
+                                                <span class="text-white svn-gilroy font-sm hite">Chi tiết </span>
+                                                <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M10.6667 16L14.6667 12L10.6667 8" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Lux 500 -->
+                            <div class="swiper-slide combo h-auto w-full md:w-auto bg-gradient4 bg-[#8E3900] text-white rounded-[16px] p-6 border-2 border-gradient-to-r from-[#8E0F0F] via-[#FFFFFF] to-[#C14B31]">
+                                <div class="absolute z-10 top-0 right-0 bottom-0 z-1 opacity-90">
+                                    <img class="rounded-[16px]  h-full" src="./img/vector-decote-intenet-2.png"/>
+                                </div>
+                                <div class="h-full relative z-10 flex flex-col justify-between items-start">
+                                    <div class="w-full flex flex-col">
+                                        <div class="w-full flex justify-between items-center mb-4">
+                                            <h3 class="text-lg svn-gilroy-semibold">Lux 500</h3>
+                                            <button class="bg-[#E9392E] svn-gilroy-semibold rounded-3xl">
+                                                <div class="flex items-center justify-center py-1 px-2 text-[12px]">
+                                                    <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.885 2.99137C8.92719 2.68386 8.53177 2.52257 8.34684 2.77185L3.35451 9.50144C3.20765 9.6994 3.34896 9.98018 3.59545 9.98018H7.98873C8.17062 9.98018 8.31066 10.1407 8.28594 10.321L7.78039 14.006C7.7382 14.3135 8.13361 14.4748 8.31854 14.2255L13.3109 7.49596C13.4577 7.29799 13.3164 7.01722 13.0699 7.01722H8.67666C8.49477 7.01722 8.35472 6.85665 8.37944 6.67644L8.885 2.99137Z" fill="white"/>
+                                                    </svg>
+                                                    <span class="pt-[2.5px] text-white pl-1 pr-1 leading-none">
+                                                        BÁN CHẠY
+                                                    </span>
+                                                </div>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    
+                                    <p class="mb-4 text-sm svn-gilroy ">Tốc độ download/upload</p>
+                                    <h4 class="text-4xl svn-gilroy-bold mb-4">Lên tới 500 Mbps</h4>
+
+                                    <div class="flex flex-col justify-end items-center w-full">
+                                        <button onclick="openModal()" class="w-full gradient-button h-[42px]">
+                                        <span class="svn-gilroy-bold text-base text-white">Đăng ký ngay</span>
+                                    </button>
+                                        <ul class="text-left mt-4 space-y-2 list-disc pl-4">
+                                            <li class="wt svn-gilroy ">Miễn phí <span class="text-[#E7AA88] indent-4">lắp đặt, trang bị Modern WiFi & HD Box</span></li>
+                                        </ul>
+                                        <div class="flex justify-between items-center mt-4 w-full">
+                                            <p class="leading-6"><span class="svn-gilroy-semibold text-sm">Giá:</span> <span class="svn-gilroy-bold text-white">800.000đ/tháng</span></p>
+                                            <a href="https://shop.fpt.vn/s/rvnvhl-detail" class="flex justify-center items-center">
+                                                <span class="text-white svn-gilroy font-sm hite">Chi tiết </span>
+                                                <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M10.6667 16L14.6667 12L10.6667 8" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <!-- Lux 800 -->
+                            <div class="swiper-slide combo h-auto w-full md:w-auto bg-white text-gray-800  rounded-[16px] p-6 border-2 border-gradient-to-r from-[#C1C1C1] via-[#FFFFFF] to-[#E6E6E6]">
+                                <div class="absolute z-10 top-0 right-0 bottom-0 z-1 opacity-90">
+                                    <img class="rounded-[16px] h-full" src="./img/vector-decote-intenet-3.png"/>
+                                </div>
+                                <div class="h-full relative z-10 flex flex-col justify-between items-start">
+                                    <div class="w-full flex flex-col">
+                                        <div class="w-full flex justify-between items-center mb-4">
+                                            <h3 class="text-lg svn-gilroy-semibold">Lux 800</h3>
+                                           
+                                        </div>
+                                        
+                                        <p class="mb-4 text-sm text-gray-500 svn-gilroy ">Tốc độ download/upload</p>
+                                        <h4 class="text-4xl svn-gilroy-bold mb-4 text-gray-700 mb-4 bg-gradient-to-r from-[#1F2636] to-[#AAB7D5] bg-clip-text text-transparent">Lên tới 800 Mbps</h4>
+                                        <p class="text-gray-500 mb-3 bg-gradient-to-r from-[#1F2636] to-[#AAB7D5] bg-clip-text text-transparent">Phụ thuộc vào thiết bị</p>
+                                    </div>
+                                    
+                                    <div class="flex flex-col justify-end items-center w-full">
+                                        <button onclick="openModal()" class="w-full gradient-button h-[42px]">
+                                        <span class="svn-gilroy-bold text-base text-white">Đăng ký ngay</span>
+                                    </button>
+                                        <ul class="text-left mt-4 space-y-2 list-disc pl-4">
+                                            <li class="wt svn-gilroy ">Miễn phí <span class="text-[#E7AA88] indent-4">lắp đặt, trang bị Modern WiFi & HD Box</span></li>
+                                        </ul>
+                                        <div class="flex justify-between items-center mt-4 w-full">
+                                            <p class="leading-6"><span class="svn-gilroy-semibold text-sm">Giá:</span> <span class="svn-gilroy-bold text-[#1F2636]">800 Mbpsđ/tháng</span></p>
+                                            <a href="https://shop.fpt.vn/s/rvnvhl-detail" class="flex justify-center items-center">
+                                                <span class="svn-gilroy font-sm leading-[14px] text-[#1F2636]">Chi tiết </span>
+                                                <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M10.6667 16L14.6667 12L10.6667 8" stroke="#1F2636" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Super 400 -->
+                            <div class="swiper-slide combo h-auto w-full md:w-auto bg-gradient3 bg-[#8E3900] text-white rounded-[16px] p-6 border-2 border-gradient-to-r from-[#FFB494] via-[#FFFFFF] to-[#FFCF53]">
+                                <div class="absolute z-10 top-0 right-0 bottom-0 z-1 opacity-90">
+                                    <img class="rounded-[16px]  h-full" src="./img/vector-decote-intenet-1.png"/>
+                                </div>
+                                <div class="h-full relative z-10 flex flex-col justify-between items-start">
+                                    <div class="w-full flex flex-col">
+                                        <div class="w-full flex justify-between items-center mb-4">
+                                            <h3 class="text-lg svn-gilroy-semibold">Super 400</h3>
+                                            <button class="bg-[#FF6C28] svn-gilroy-semibold rounded-3xl">
+                                                <div class="flex items-center justify-center py-1 px-2 text-[12px]">
+                                                    <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.885 2.99137C8.92719 2.68386 8.53177 2.52257 8.34684 2.77185L3.35451 9.50144C3.20765 9.6994 3.34896 9.98018 3.59545 9.98018H7.98873C8.17062 9.98018 8.31066 10.1407 8.28594 10.321L7.78039 14.006C7.7382 14.3135 8.13361 14.4748 8.31854 14.2255L13.3109 7.49596C13.4577 7.29799 13.3164 7.01722 13.0699 7.01722H8.67666C8.49477 7.01722 8.35472 6.85665 8.37944 6.67644L8.885 2.99137Z" fill="white"/>
+                                                    </svg>
+                                                    <span class="pt-[2.5px] text-white pl-1 pr-1 leading-none">
+                                                        BÁN CHẠY
+                                                    </span>
+                                                </div>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <p class="mb-4 text-sm svn-gilroy ">Tốc độ download/upload</p>
+                                    <h4 class="text-4xl svn-gilroy-bold mb-4">Lên tới 400 Mbps</h4>
+
+                                    <div class="flex flex-col justify-end items-center w-full">
+                                        <button onclick="openModal()" class="w-full gradient-button h-[42px]">
+                                        <span class="svn-gilroy-bold text-base text-white">Đăng ký ngay</span>
+                                    </button>
+                                        <ul class="text-left mt-4 space-y-2 list-disc pl-4">
+                                            <li class="wt svn-gilroy ">Miễn phí <span class="text-[#E7AA88] indent-4">lắp đặt, trang bị Modern WiFi & HD Box</span></li>
+                                        </ul>
+                                        <div class="flex justify-between items-center mt-4 w-full">
+                                            <p class="leading-6"><span class="svn-gilroy-semibold text-sm">Giá:</span> <span class="svn-gilroy-bold text-white">1.400.000đ/tháng</span></p>
+                                            <a href="https://shop.fpt.vn/s/rvnvhl-detail" class="flex justify-center items-center">
+                                                <span class="text-white svn-gilroy font-sm hite">Chi tiết </span>
+                                                <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M10.6667 16L14.6667 12L10.6667 8" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Super 500 -->
+                            <div class="swiper-slide combo h-auto w-full md:w-auto bg-gradient4 bg-[#8E3900] text-white rounded-[16px] p-6 border-2 border-gradient-to-r from-[#8E0F0F] via-[#FFFFFF] to-[#C14B31]">
+                                <div class="absolute z-10 top-0 right-0 bottom-0 z-1 opacity-90">
+                                    <img class="rounded-[16px]  h-full" src="https://pay.fpt.com/fpay-htm/img/vector-decote-intenet-2.png"/>
+                                </div>
+                                <div class="h-full relative z-10 flex flex-col justify-between items-start">
+                                    <div class="w-full flex flex-col">
+                                        <div class="w-full flex justify-between items-center mb-4">
+                                            <h3 class="text-lg svn-gilroy-semibold">Super 500</h3>
+                                            <button class="bg-[#E9392E] svn-gilroy-semibold rounded-3xl">
+                                                <div class="flex items-center justify-center py-1 px-2 text-[12px]">
+                                                    <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.885 2.99137C8.92719 2.68386 8.53177 2.52257 8.34684 2.77185L3.35451 9.50144C3.20765 9.6994 3.34896 9.98018 3.59545 9.98018H7.98873C8.17062 9.98018 8.31066 10.1407 8.28594 10.321L7.78039 14.006C7.7382 14.3135 8.13361 14.4748 8.31854 14.2255L13.3109 7.49596C13.4577 7.29799 13.3164 7.01722 13.0699 7.01722H8.67666C8.49477 7.01722 8.35472 6.85665 8.37944 6.67644L8.885 2.99137Z" fill="white"/>
+                                                    </svg>
+                                                    <span class="pt-[2.5px] text-white pl-1 pr-1 leading-none">
+                                                        BÁN CHẠY
+                                                    </span>
+                                                </div>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    
+                                    <p class="mb-4 text-sm svn-gilroy ">Tốc độ download/upload</p>
+                                    <h4 class="text-4xl svn-gilroy-bold mb-4">Lên tới 500 Mbps</h4>
+
+                                    <div class="flex flex-col justify-end items-center w-full">
+                                        <button onclick="openModal()" class="w-full gradient-button h-[42px]">
+                                        <span class="svn-gilroy-bold text-base text-white">Đăng ký ngay</span>
+                                    </button>
+                                        <ul class="text-left mt-4 space-y-2 list-disc pl-4">
+                                            <li class="wt svn-gilroy ">Miễn phí <span class="text-[#E7AA88] indent-4">lắp đặt, trang bị Modern WiFi & HD Box</span></li>
+                                        </ul>
+                                        <div class="flex justify-between items-center mt-4 w-full">
+                                            <p class="leading-6"><span class="svn-gilroy-semibold text-sm">Giá:</span> <span class="svn-gilroy-bold text-white">2.500.000đ/tháng</span></p>
+                                            <a href="https://shop.fpt.vn/s/rvnvhl-detail" class="flex justify-center items-center">
+                                                <span class="text-white svn-gilroy font-sm hite">Chi tiết </span>
+                                                <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M10.6667 16L14.6667 12L10.6667 8" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!--  
+                            <div class=" block md:hidden swiper-slide w-full cursor-pointer">
+                                <button class="show-more mx-auto w-fit flex justify-between items-center mt-4 px-4 py-2 rounded-full border border-gray-300 text-gray-700">
+                                    <span class="pr-2 button-text">
+                                        Xem thêm 7 gói khác
+                                    </span>
+                                    <svg class="svg-inside" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 1L5 5L9 1" stroke="#323232" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                           </div>
+                           -->
+                        </div>
+                    </div>
+                    <div class="swiper-pagination combo-pagination3 mt-4 relative top-10"></div>
+                    <div class="absolute inset-y-0 left-[-70px] flex items-center">
+                        <button class="w-12 swiper-button-prev combo-prev3 absolute left-0 top-1/2 transform -translate-y-1/2 bg-white text-gray-800 rounded-full p-2 shadow-md hover:bg-gray-100 focus:outline-none">
+                            <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.66665 1.1665L1.33331 6.49984L6.66665 11.8332" stroke="#323232" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="absolute inset-y-0 right-0 flex items-center">
+                        <button class="w-12 swiper-button-next combo-next3 absolute right-[-70px] top-1/2 transform -translate-y-1/2 bg-white text-gray-800 rounded-full p-2 shadow-md hover:bg-gray-100 focus:outline-none">
+                            <span class="rotate-180">
+                                <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.66665 1.1665L1.33331 6.49984L6.66665 11.8332" stroke="#323232" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="bg-[#F7F7F7] w-full mx-auto py-10 mt-4">
+            <div class="relative bg-white max-w-screen-lg mx-auto flex flex-col md:flex-row items-start justify-start bg-gray-50 rounded-xl shadow-lg">
+                <div class="absolute z-1 top-0 left-0 w-full">
+                    <img  src="./img/decote-detail-1.png"/>
+                </div>
+                <div class="relative flex items-center justify-center w-full md:w-1/2">
+                    <img src="./img/wifi1.png" alt="Wi-Fi Illustration" class="w-3/4 md:w-full">
+                   
+                </div>
+                <div class="w-full md:w-1/2 text-center md:text-left p-4 md:pl-10">
+                    <h1 class="text-2xl md:text-4xl svn-gilroy-bold text-gray-900 mb-4 leading-10">Đăng ký hòa mạng cùng FPT ngay để không bỏ lỡ ưu đãi!</h1>
+                    <p class="text-gray-600 mb-6 leading-6">Hãy để lại số điện thoại và tên của bạn tại form đăng ký, chúng tôi sẽ liên hệ cho bạn sớm nhất có thể</p>
+                    <button onclick="openModal()" class="relative z-10 w-[70%] gradient-button h-[42px]">
+                     <span class="svn-gilroy-bold text-base text-white"> Đăng ký ngay</span>
+                    </button>
+                </div>
+            </div>
+
+           
+            <section class="py-8 max-w-screen-lg mx-auto mt-10 px-4 md:px-0">
+                <div class="container mx-auto text-left">
+                    <div class="flex justify-start items-center mb-8">
+                        <img class="w-9" src="./img/icon-section4.png"/>
+                        <h2 class="text-3xl svn-gilroy-bold text-gray-800 pl-4">Hướng Dẫn Thủ Tục</h2>
+                    </div>
+                    <div class="flex flex-col md:flex-row space-y-4 space-x-0 md:space-x-4">
+                        <div class="flex flex-col w-auto md:w-[241px] space-y-4">
+                            <div class="bg-white p-4 rounded-lg shadow-md flex flex-col items-start4 space-y-4 relative ">
+                                <div class="absolute bottom-0 right-0">
+                                    <img src="./img/decore-intruct-1.png" alt="Decorative Element" class="max-w-[212px] h-auto">
+                                </div>
+                                <div class="relative z-1 text-orange-500 svn-gilroy-semibold text-sm leading-6"">Chuẩn bị:</div>
+                                <ul class="relative z-1 text-[#1F2636] list-disc pl-3">
+                                    <li class="bl text-sm leading-6 svn-gilroy ">CCCD / CMND</li>
+                                </ul>
+                            </div>
+    
+                            <div class="bg-white h-full p-4 rounded-lg shadow-md flex  flex-col items-start space-y-4 relative">
+                                <div class="absolute bottom-0 right-0">
+                                    <img src="./img/decore-intruct-2.png" alt="Decorative Element" class="max-w-[212px] h-auto">
+                                </div>
+                                <div class="text-orange-500 svn-gilroy-semibold z-10">Thuê nhà/Ở trọ</div>
+                                <ul class="text-[#1F2636] z-10 pt-4 md:pt-0 list-disc pl-3">
+                                    <li class="bl text-sm leading-6 svn-gilroy ">Đặt cọc 440.000đ</li>
+                                    <li class="bl text-sm leading-6 svn-gilroy ">Miễn cọc nếu thanh toán trước 6 tháng</li>
+                                </ul>
+                            </div>
+                        </div>
+            
+                        <div class="relative w-auto md:w-[343px] bg-white p-4 rounded-lg shadow-md flex flex-col items-start space-y-4 md:!mt-0">
+                            <div class="absolute bottom-1 right-2">
+                                <img src="./img/decore-intruct-3.png" alt="Decorative Element" class="max-w-[212px] h-auto opacity-40">
+                            </div>
+                            <div class="text-orange-500 svn-gilroy-semibold">Thanh toán</div>
+                            <ul class="text-[#1F2636] z-10 list-disc pl-3">
+                                <li class="bl text-sm leading-6 svn-gilroy ">Trả sau từng tháng:</br> Phí từ 299.000 VND.</li>
+                                <li class="bl text-sm leading-6 svn-gilroy ">Trả trước 6 tháng:</br> Tặng 1 tháng cước thứ 7.</li>
+                                <li class="bl text-sm leading-6 svn-gilroy ">Trả trước 1 năm:</br> Tặng 2 tháng cước thứ 13, 14.</li>
+                            </ul>
+                        </div>
+            
+                        <div class="w-auto md:w-[343px] bg-white p-4 rounded-lg shadow-md flex flex-col items-start space-y-4 relative md:!mt-0">
+                            <div class="absolute top-1 right-2">
+                                <img src="./img/decore-intruct-4.png" alt="Decorative Element" class="w-max-w-[212px] h-auto opacity">
+                            </div>
+                            <div class="text-[#1F2636] svn-gilroy-semibold">Đăng ký dịch vụ</div>
+                            <div class="text-[#1F2636] text-sm leading-6 z-10 svn-gilroy ">
+                                Gọi ngay tới Hotline của FPT<span class="block"></span> để nhận hỗ trợ sớm nhất<span class="block"></span> và các ưu đãi!
+                            </div>
+                            <div class="flex space-x-2 flex-col justify-center items-center z-10 w-full space-y-4">
+                                <a href="tel:0854840780" class="w-full gradient-button h-[42px]">
+                                    <span class="svn-gilroy-bold text-base text-white">0854840780</span>
+                                </a>
+                                
+                            </div>
+                            <div class="text-gray-500 text-sm text-center w-full svn-gilroy ">
+                                *Hỗ trợ khách hàng qua Zalo 24/7
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        
+        <div class=" bg-[#1F2636] py-4 bg-gradient-marquee mt-10_">
+            <marquee>
+                <div class="flex items-center">
+                    <div class="marquee-item px-4 mx-2 rounded-md bg-[#4b5561] py-2 px-3 text-white svn-gilroy ">
+                        <span class="text-[#FF701D]">Vũ Tuấn</span> SĐT <span class="text-[#FF701D]">03******090</span></br> đã đăng ký gói <span class="text-[#FF701D]">Combo Giga</span>
+                    </div>
+                    <div class="marquee-item px-4 mx-2 rounded-md bg-[#4b5561] py-2 px-3 text-white svn-gilroy ">
+                        <span class="text-[#FF701D]">Đăng Khoa</span> SĐT <span class="text-[#FF701D]">09******296</span></br> đã đăng ký gói <span class="text-[#FF701D]">Combo Giga</span>
+                    </div>
+                    <div class="marquee-item px-4 mx-2 rounded-md bg-[#4b5561] py-2 px-3 text-white svn-gilroy ">
+                        <span class="text-[#FF701D]">Như Ý</span> SĐT <span class="text-[#FF701D]">09******776</span></br> đã đăng ký gói <span class="text-[#FF701D]">Combo Giga</span>
+                    </div>
+                    <div class="marquee-item px-4 mx-2 rounded-md bg-[#4b5561] py-2 px-3 text-white svn-gilroy ">
+                        <span class="text-[#FF701D]">Hoàng Anh</span> SĐT <span class="text-[#FF701D]">08******655</span></br> đã đăng ký gói <span class="text-[#FF701D]">Combo Giga</span>
+                    </div>
+                    <div class="marquee-item px-4 mx-2 rounded-md bg-[#4b5561] py-2 px-3 text-white svn-gilroy ">
+                        <span class="text-[#FF701D]">Minh Khang</span> SĐT <span class="text-[#FF701D]">09******359</span></br> đã đăng ký gói <span class="text-[#FF701D]">Combo Giga</span>
+                    </div>
+                    <div class="marquee-item px-4 mx-2 rounded-md bg-[#4b5561] py-2 px-3 text-white svn-gilroy ">
+                        <span class="text-[#FF701D]">Thanh Mai</span> SĐT <span class="text-[#FF701D]">03******333</span></br> đã đăng ký gói <span class="text-[#FF701D]">Combo Giga</span>
+                    </div>
+                    <div class="marquee-item px-4 mx-2 rounded-md bg-[#4b5561] py-2 px-3 text-white svn-gilroy ">
+                        <span class="text-[#FF701D]">Mạnh Phúc</span> SĐT <span class="text-[#FF701D]">03******784</span></br> đã đăng ký gói <span class="text-[#FF701D]">Combo Giga</span>
+                    </div>
+                    <div class="marquee-item px-4 mx-2 rounded-md bg-[#4b5561] py-2 px-3 text-white svn-gilroy ">
+                        <span class="text-[#FF701D]">Thanh Hiền</span> SĐT <span class="text-[#FF701D]">08******561</span></br> đã đăng ký gói <span class="text-[#FF701D]">Combo Giga</span>
+                    </div>
+                   
+                </div>
+            </marquee>
+        </div>
+
+        <footer class="bg-white text-gray-800 w-full">
+            <div class="container mx-auto px-4 md:px-0">
+                <div class="flex justify-between items-center h-[100px]">
+                <img src="./img/logoFPT.png" alt="FPT Telecom">
+                <div class="justify-end items-center cursor-pointer hidden md:flex">
+                    <a href="https://fpt.vn/hifpt.php" target="_blank"><img src="https://pay.fpt.com/fpay-htm/img/hifpt.png" alt=""></a>
+                    <a href="https://www.youtube.com/user/likefpt" target="_blank"><img src="https://pay.fpt.com/fpay-htm/img/ytb.png" alt=""></a>
+                    <a href="https://www.instagram.com/fpt.telecom/" target="_blank"><img src="https://pay.fpt.com/fpay-htm/img/instagram.png" alt=""></a>
+                    <a href="https://zalo.me/0854840780" target="_blank"><img src="https://pay.fpt.com/fpay-htm/img/zalo.png" alt=""></a>
+                    <a href="https://www.facebook.com/FptTelecom/" target="_blank"><img src="https://pay.fpt.com/fpay-htm/img/fb.png" alt=""></a>
+                </div>
+            </div>
+
+            <div class="flex flex-col-reverse md:flex-row justify-start justify-between gap-0 md:gap-8">
+                <div class="md:max-w-[512px]">
+                   <div class="flex flex-col">
+                        <div class="flex flex-col-reverse md:flex-col">
+                            <div>
+                                <p class="text-[15px] leading-[22.5px] svn-gilroy">Giấy chứng nhận ĐKDN số 0101778163 do Sở Kế hoạch và Đầu tư Thành phố Hà Nội cấp lần đầu ngày 28/07/2005</p>
+                                <p class="text-[15px] leading-[22.5px] svn-gilroy">Giấy phép cung cấp dịch vụ viễn thông số 255/GP-CVT do Cục Viễn Thông cấp ngày 07/11/2022</p>
+                            </div>
+                            <div>
+                                <p class="text-[15px] leading-[22.5px] svn-gilroy">Công ty Cổ phần Viễn thông FPT</p>
+                                <p class="text-[15px] leading-[22.5px] svn-gilroy">Địa chỉ trụ sở công ty: Tầng 2, tòa nhà FPT Cầu Giấy, số 17 Duy Tân, Phường Dịch Vọng Hậu, Quận Cầu Giấy, TP. Hà Nội</p>
+                                <p class="text-[15px] leading-[22.5px] svn-gilroy">Địa chỉ liên lạc: Tầng 9, Block A, tòa nhà FPT Cầu Giấy, số 10 Phạm Văn Bạch, quận Cầu Giấy, TP. Hà Nội</p>    
+                            </div>
+                        </div>
+                        <div class="pt-4 md:pt-0">
+                            <p class="text-[15px] leading-[22.5px] svn-gilroy">Thư điện tử: hotrokhachhang@fpt.com</p>
+                            <p class="text-[15px] leading-[22.5px] svn-gilroy">Số điện thoại liên hệ: 024 7300 2222</p>
+                            <p class="text-[15px] leading-[22.5px] svn-gilroy">Tên người đại diện: Ông Hoàng Việt Anh</p>
+                            <div class="mt-4 flex justify-between items-center">
+                                <img src="./img/verify.png" alt="Đã thông báo bộ công thương" class="w-32">
+                                <div class="flex justify-end items-center cursor-pointer inline md:hidden">
+                                    <a href="https://fpt.vn/hifpt.php" target="_blank"><img class="max-w-8" src="https://pay.fpt.com/fpay-htm/img/hifpt.png" alt=""></a>
+                                    <a href="https://www.youtube.com/user/likefpt" target="_blank"><img class="max-w-8" src="https://pay.fpt.com/fpay-htm/img/ytb.png" alt=""></a>
+                                    <a href="https://www.instagram.com/fpt.telecom/" target="_blank"><img class="max-w-8" src="https://pay.fpt.com/fpay-htm/img/instagram.png" alt=""></a>
+                                    <a href="https://zalo.me/0854840780" target="_blank"><img class="max-w-8" src="https://pay.fpt.com/fpay-htm/img/zalo.png" alt=""></a>
+                                    <a href="https://www.facebook.com/FptTelecom/" target="_blank"><img class="max-w-8" src="https://pay.fpt.com/fpay-htm/img/fb.png" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                   </div>
+                </div>
+        
+                <div class="grid grid-cols-1 md:grid-cols-3 justify-between gap-0 md:gap-8 ">
+                    <div class="group collapsed"> 
+                        <h5 class="text-orange-600 font-medium text-lg mb-4 flex items-center btn-expand">
+                            Về FPT Telecom 
+                            <span class="pl-1 block md:hidden">
+                                <svg class="group-[.collapsed]:-rotate-90" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8 10L12 14L16 10" stroke="#DF6F21" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </span>
+                        </h5>
+                        <ul class="group-[.collapsed]:hidden md:!block pb-4 md:pb-0">
+                            <li><a href="https://fpt.vn/vi/ve-fpt-telecom/gioi-thieu-chung.html" class="hover:text-orange-600 svn-gilroy">Giới thiệu chung</a></li>
+                            <li><a href="https://fpt.vn/vi/ve-fpt-telecom/lien-ket-thanh-vien.html" class="hover:text-orange-600 svn-gilroy">Liên kết - Thành viên</a></li>
+                            <li><a href="https://fpt.vn/vi/ve-fpt-telecom/khach-hang-doi-tac" class="hover:text-orange-600 svn-gilroy">Khách hàng - Đối tác</a></li>
+                            <li><a href="https://fpt.vn/vi/ve-fpt-telecom/quan-he-co-dong" class="hover:text-orange-600 svn-gilroy">Quan hệ cổ đông</a></li>
+                            <li><a href="https://fpt.vn/vi/ve-fpt-telecom/tap-doan-fpt.html" class="hover:text-orange-600 svn-gilroy">Tập đoàn FPT</a></li>
+                        </ul>
+                    </div>
+                
+                    <div class="group collapsed"> 
+                        <h5 class="text-orange-600 font-medium text-lg mb-4 flex items-center btn-expand">
+                            Khách hàng FPT Telecom
+                            <span class="pl-1 block md:hidden">
+                                <svg class="group-[.collapsed]:-rotate-90" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8 10L12 14L16 10" stroke="#DF6F21" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </span>
+                        </h5>
+                        <ul class="group-[.collapsed]:hidden md:!block pb-4 md:pb-0">
+                        <li><a href="https://fpt.vn/vi/khach-hang-ca-nhan/ho-tro/ho-tro-thong-tin/huong-dan-su-dung" class="hover:text-orange-600 svn-gilroy">Hướng dẫn sử dụng dịch vụ</a></li>
+                        <li><a href="https://gioithieubanbe.fpt.vn/" class="hover:text-orange-600 svn-gilroy">Giới thiệu bạn bè</a></li>
+                        <li><a href="https://fpt.vn/pay/vi/auth" class="hover:text-orange-600 svn-gilroy">Thanh toán Online</a></li>
+                        <li><a href="https://fpt.vn/vi/khach-hang-ca-nhan/ho-tro/phan-hoi-khach-hang/gop-y.html" class="hover:text-orange-600 svn-gilroy">Góp ý khách hàng</a></li>
+                        </ul>
+                    </div>
+                
+                    <div class="group collapsed"> 
+                        <h5 class="text-orange-600 font-medium text-lg mb-4 flex items-center btn-expand">
+                            Chưa là khách hàng của FPT Telecom
+                            <span class="pl-1 block md:hidden">
+                                <svg class="group-[.collapsed]:-rotate-90" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8 10L12 14L16 10" stroke="#DF6F21" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </span>
+                        </h5>
+                        <ul class="group-[.collapsed]:hidden md:!block pb-4 md:pb-0">
+                            <li><a href="https://shop.fpt.vn/#sec-combo-skycam" class="hover:text-orange-600 svn-gilroy">Đăng ký Online</a></li>
+                            <li><a href="https://fpt.vn/vi/khach-hang-ca-nhan/san-pham-dich-vu/internet-fpt/cap-quang-ca-nhan.html" class="hover:text-orange-600 svn-gilroy">Sản phẩm dịch vụ</a></li>
+                            <li><a href="https://fpt.vn/vi/khach-hang-ca-nhan/khuyen-mai" class="hover:text-orange-600 svn-gilroy">Khuyến mại</a></li>
+                            <li><a href="https://fpt.vn/vi/khach-hang-ca-nhan/ho-tro/lien-he-24-7/diem-giao-dich" class="hover:text-orange-600 svn-gilroy">Tìm điểm giao dịch</a></li>
+                            <li><a href="https://fpt.vn/vi/khach-hang-ca-nhan/tin-tuc" class="hover:text-orange-600 svn-gilroy">Tin tức</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="mt-8 flex justify-center space-x-4">
+                <a href="#" class="text-gray-600 hover:text-gray-800"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="text-gray-600 hover:text-gray-800"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="text-gray-600 hover:text-gray-800"><i class="fab fa-youtube"></i></a>
+                <a href="#" class="text-gray-600 hover:text-gray-800"><i class="fab fa-zalo"></i></a>
+            </div>
+            
+            </div>
+            <div class="w-full pb-2">
+                <div class="swiper myComboSwiper5 relative">
+                    <div class="swiper-wrapper px-0 md:px-20">
+                        <div class="swiper-slide pl-10 md:pl-0">
+                            <img class="max-w-[120px] pl-4" src="./img/end-footer-logo-1.png" alt=""/>
+                        </div>
+                        <div class="swiper-slide pl-10 md:pl-0">
+                            <img class="max-w-[120px]" src="./img/end-footer-logo-2.png" alt=""/>
+                        </div>
+                        <div class="swiper-slide pl-10 md:pl-0">
+                            <img class="max-w-[120px]" src="./img/end-footer-logo-3.png" alt=""/>
+                        </div>
+                        <div class="swiper-slide pl-10 md:pl-0">
+                            <img class="max-w-[120px]" src="./img/end-footer-logo-4.png" alt=""/>
+                        </div>
+                        <div class="swiper-slide pl-10 md:pl-0">
+                            <img class="max-w-[120px]" src="./img/end-footer-logo-5.png" alt=""/>
+                        </div>
+                        <div class="swiper-slide pl-10 md:pl-0">
+                            <img class="max-w-[120px]" src="./img/end-footer-logo-6.png" alt=""/>
+                        </div>
+                        <div class="swiper-slide pl-10 md:pl-0">
+                            <img class="max-w-[120px]" src="./img/end-footer-logo-7.png" alt=""/>
+                        </div>
+                        <div class="swiper-slide pl-10 md:pl-0">
+                            <img class="max-w-[120px]" src="./img/end-footer-logo-1.png" alt=""/>
+                        </div>
+                        <div class="swiper-slide pl-10 md:pl-0">
+                            <img class="max-w-[120px]" src="./img/end-footer-logo-2.png" alt=""/>
+                        </div>
+                        <div class="swiper-slide pl-10 md:pl-0">
+                            <img class="max-w-[120px]" src="./img/end-footer-logo-3.png" alt=""/>
+                        </div>
+                    </div>
+                    <div class="absolute bottom-0 top-10 w-full flex justify-between items-center">
+                        <div class="swiper-button-prev combo-pre5 -translate-y-1/2 left-0 w-10 h-10 md:w-20 md:h-20 bg-white">
+                            <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.66665 1.1665L1.33331 6.49984L6.66665 11.8332" stroke="#747783" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+
+                        <div class="swiper-button-next combo-next5 -translate-y-1/2 right-0 w-10 h-10 md:w-20 md:h-20 bg-white">
+                            <span class="rotate-180">
+                                <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.66665 1.1665L1.33331 6.49984L6.66665 11.8332" stroke="#747783" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bg-[#1F2636] w-full h-[32px] flex justify-center items-center">
+                <span class="text-white text-[13px] leading-[26px]">© 2018 Bản quyền thuộc về FPT Telecom</span>
+            </div>
+        </footer>
+
+
+        <div id="invalidModal" class="fixed inset-0 z-50 hidden bg-gray-900 bg-opacity-50 flex items-center justify-center">
+            <div class="bg-white w-[90%] md:max-w-[662px] rounded-lg shadow-lg">
+                <div class="p-6 relative">
+                    <button class="absolute top-3 right-5 text-[#9EA5B4] hover:text-gray-900" onclick="_closeModal('invalidModal')">&#10005;</button>
+                   <div class="grid grid-cols-1 md:grid-cols-5 justify-between items-center"> 
+                        <div class="col-span-2 mx-auto md:mx-0">
+                            <img class="w-[139px] h-[139px] md:w-[236px] md:h-[236px] " src="./img/smartphone-with-hand.png" />
+                        </div>
+                        <div class="text-left col-span-3">
+                            <h2 class="text-orange-500 text-2xl svn-gilroy-semibold mb-4 text-center md:text-left" >Đăng ký thông tin</h2>
+                            <p class="text-[#9EA5B4] mb-6 text-center md:text-left ">Quý khách vui lòng nhập số điện thoại và tên để đăng ký dịch vụ</p>
+                            <button onclick="_closeModal('invalidModal');" class="w-full h-[47px] bg-gradient-to-r from-[#FF6320] to-[#FFA153] text-white svn-gilroy-semibold rounded-[28px] py-2 px-6 hover:shadow-lg">
+                                Đóng
+                            </button>
+                        </div>
+                   </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="myModal" class="fixed inset-0 z-50 hidden bg-gray-900 bg-opacity-50 flex items-center justify-center">
+            <div class="bg-white w-[90%] md:max-w-[662px] rounded-lg shadow-lg">
+                <div class="p-6 relative">
+                    <button class="absolute top-3 right-5 text-[#9EA5B4] hover:text-gray-900" onclick="closeModal()">&#10005;</button>
+                   <div class="grid grid-cols-1 md:grid-cols-5 justify-between items-center"> 
+                        <div class="col-span-2 mx-auto md:mx-0">
+                            <img class="w-[139px] h-[139px] md:w-[236px] md:h-[236px] " src="./img/smartphone-with-hand.png" />
+                        </div>
+                        <div class="text-left col-span-3">
+                            <form name="form-dang-ky-thong-tin">
+                                <h2 class="text-orange-500 text-2xl svn-gilroy-semibold mb-4 text-center md:text-left" >Đăng ký thông tin</h2>
+                                <p class="text-[#9EA5B4] mb-6 text-center md:text-left ">Quý khách vui lòng nhập số điện thoại và tên để đăng ký dịch vụ</p>
+                                <input type="text" name="name" class="w-full h-[42px] p-3 mb-4 border border-gray-300 rounded-md" placeholder="Họ và tên">
+                                <input type="text" name="phone" class="w-full h-[42px] p-3 mb-4 border border-gray-300 rounded-md" placeholder="Nhập số điện thoại">
+                    
+                                <button type="button" onclick="return register(this);" class="relative z-10 w-full gradient-button h-[47px]">
+                                    <span class="svn-gilroy-bold text-base text-white"> Đăng ký ngay</span>
+                                </button>
+                            </form>
+                        </div>
+                   </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="myModal2" class="fixed inset-0 z-50 hidden bg-gray-900 bg-opacity-50 flex items-center justify-center">
+            <div class="bg-white w-[90%] md:max-w-[662px] rounded-lg shadow-lg">
+                <div class="p-6 relative">
+                    <button class="absolute top-4 right-4 text-[#9EA5B4] hover:text-gray-900" onclick="closeModal2()">&#10005;</button>
+                    <div class="text-center">
+                        <h2 class="text-orange-500 text-2xl svn-gilroy-semibold mb-4">Thành công</h2>
+                        <p class="text-[#9EA5B4] mb-6">Cảm ơn bạn đã đăng ký, chúng tôi đã<span class="block"></span> lưu lại thông tin của bạn và sẽ liên hệ với <span class="block"></span> bạn trong thời gian sớm nhất</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="fixed bottom-24 md:bottom-5 right-5 flex flex-col items-center space-y-4 z-20">
+            <button id="chatIcon">
+                <a href="https://zalo.me/0854840780" target="_blank">
+                    <img width="48" src="https://pay.fpt.com/fpay-htm/img/chatZaloAct.png"/>
+                </a>
+            </button>
+            <button id="callIcon">
+                <a href="tel:0854840780">
+                    <img width="48" src="https://pay.fpt.com/fpay-htm/img/callAct.png"/>
+                </a>
+            </button>
+            <div class="relative">
+                <button id="messageIcon">
+                    <img width="48" src="./img/chatReal.png"/>
+                </button>
+                <div id="notificationBubble" class="absolute left-[-220px] bottom-0 w-[220px] p-3 bg-white rounded-lg shadow-lg opacity-0 transform scale-0 transition-all duration-300 origin-right hidden pr-2">
+                    <div class="text-sm text-gray-800 svn-gilroy">Hãy chat với chúng tôi ngay để nhận ưu đãi nhé</div>
+                    <div class="absolute right-[-10px] top-1/2 transform -translate-y-1/2 border-8 border-transparent border-l-white"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="chatFormContainer" class="z-50 rounded-t-xl fixed bottom-0 right-4  hidden bg-white shadow-lg z-20 mx-auto w-[93%] md:max-w-[376px]">
+            <div class="bg-orange-500 flex items-center justify-between p-4 rounded-t-xl">
+                <div class="flex flex-row space-x-2">
+                    <img src="./img/user-logo.png"/>
+                    <h2 class="text-lg svn-gilroy-semibold text-white">FPT Telecom</h2>
+                </div>
+
+               <div class="flex flex-row space-x-2">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="12" cy="12" r="10" fill="white"/>
+                        <path d="M7.99976 12H8.00877M12.0043 12H12.0133M15.9907 12H15.9998" stroke="#1F2636" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        
+                    <svg id="closeChat" class="cursor-pointer" width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="12" cy="12" r="10" fill="white"/>
+                        <circle cx="12" cy="12" r="10" fill="white"/>
+                        <path d="M16 12H8" stroke="#1F2636" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+               </div>
+            </div>
+            <div class="p-4 bg-[#EFEFF0]">
+                <div class="">
+                    <form class="space-y-4 bg-white p-4 rounded-md">
+                        <div>
+                            <label class="block text-gray-700 font-medium mb-2">* Họ và tên</label>
+                            <input type="text" name="name" class="w-full border border-gray-300 rounded p-2 focus:outline-none focus:ring-2 focus:ring-orange-500">
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 font-medium mb-2">* Số điện thoại</label>
+                            <input type="text" name="phone" class="w-full border border-gray-300 rounded p-2 focus:outline-none focus:ring-2 focus:ring-orange-500">
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 font-medium mb-2">* Địa chỉ</label>
+                            <input type="text" name="address" class="w-full border border-gray-300 rounded p-2 focus:outline-none focus:ring-2 focus:ring-orange-500">
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 font-medium mb-2">* Câu hỏi</label>
+                            <textarea name="question" class="w-full border border-gray-300 rounded p-2 focus:outline-none focus:ring-2 focus:ring-orange-500" rows="4"></textarea>
+                        </div>
+                        <button onclick="return register(this);" class="w-full gradient-button h-[42px]">
+                                        <span class="svn-gilroy-bold text-base text-white">Đăng ký ngay</span>
+                                    </button>
+    
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        
+    </div>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TMJJ988P"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/ultils.js"></script>
+    <script src="./js/modal.js"></script>
+    <script src="./js/swiperEl.js"></script>
+    <script src="./js/dropdown.js"></script>
+    <script src="./js/showMore.js"></script>
+    <script src="./js/chat.js"></script>
+</body>
+</html>
